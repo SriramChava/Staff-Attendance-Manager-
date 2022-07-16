@@ -4,7 +4,18 @@ Web App for managing and storing staff attendance of an organisation.
 # WEBAPP URL : 
 https://script.google.com/macros/s/AKfycbwHJZhZBBrqXdkm7rjzjShnQ2873nInUBK79_xGMf0aeNBgpsgP1MpkHaLRhyTrrvUB/exec
 
+
 # Staff Management
+
+Google Apps Script Documentation : https://developers.google.com/apps-script/guides/sheets/functions
+
 The Staff Management system is a webapp, where staff of the organization can mark their daily attendance. The webapp includes a login dashboard which is protected by a passcode so that only staff can open the webpage.
-Staff will type his/her name and click on the ADD ENTRY button to record their entry time and at the time of leaving they can again type their name and click on ADD EXIT to record their exit time. The webapp can also has buttons for adding off/leave in case of the absence of the staff member.
-The DELETE ALL button will delete all the entries from the spreadsheet. Drive folders have been linked to the webapp. After every month the original excel is cleared and one drive folder stores the copies of excel for every month. With the same button the webapp can also generate all PDFs and mail the staff attendance report PDFs to all staff members. The PDFs are also stored in a different drive folder. Buttons to visit all the drive links and excel sheet have been provided in the webapp.
+
+ADD ENTRY : Staff will type his/her name and click on the ADD ENTRY button to record their entry time.
+ADD EXIT : Staff can enter their name again and an exit time is automatically added in the excel. It is necessary for the user to already have an entry time otherwise an exit time will not be added.
+ADD OFF/LEAVE : This button adds OFF and Leave against a persons name in case they are not present.
+DELETE ALL:  This button deletes all the added entries in the sheet incase of an error.
+SAVE EXCEL IN DRIVE AND GENERATE PDFS : This button should be activated monthly for best performance. Pressing this button deletes all entries of the previous month and genrates PDFS and mails the previous months attendance reports to all the recipients. Drive folder links have to be provied for storing previous months excels and also to store all the generated reports.  
+
+
+
